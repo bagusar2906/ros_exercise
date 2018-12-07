@@ -1,0 +1,13 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}",
+                "/home/bagus/ws_test/devel/include",
+                "/opt/ros/melodic/include"
+            ]
+        }
+    ],
+    "version": 4
+}
