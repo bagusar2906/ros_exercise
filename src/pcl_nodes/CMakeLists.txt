@@ -141,7 +141,6 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(pub_pcl_node src/pub_pcl_node.cpp)
-add_executable(pcl_filter_node src/pcl_filter_node.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -156,7 +155,6 @@ add_dependencies(pub_pcl_node ${PROJECT_NAME}_gencpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(pub_pcl_node ${catkin_LIBRARIES} ${PCL_LIBRARIES} )
-target_link_libraries(pcl_filter_node ${catkin_LIBRARIES} ${PCL_LIBRARIES} )
 
 #############
 ## Install ##

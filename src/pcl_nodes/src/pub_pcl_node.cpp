@@ -79,18 +79,10 @@ int main(int argc, char **argv)
     ros::Publisher pcl_pub = pcl_node.advertise<PointCloud>("pcl_pub_path", 1, true);
     ros::ServiceServer pcl_srv = pcl_node.advertiseService("get_number_of_points", GetNumberOfPoints);
 
-
     string filename = argv[1];
     
-    _pcl->header.frame_id = "map";
-    //std_msgs::Header header = std_msgs::Header();
-    //header->stamp = ros::Time(0);
-    
-    //pcl = sensor_msgs::PointCloud();
-    //pcl.header = header;
+    _pcl->header.frame_id = "map";   
     load_from_file(filename);
-    
-    //pcl->points = _points;
     _pcl->height = 1;
     _pcl->width = _pcl->points.size();
 
