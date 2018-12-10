@@ -1,0 +1,3 @@
+<launch>
+  <node name="pcl_filter_node"  pkg="pcl_nodes" type="pcl_filter_node.py" output="screen" />
+</launch>

@@ -1,0 +1,3 @@
+<launch>
+  <node name="$(anon rviz)"  pkg="rviz" type="rviz" args="-d $(find pcl_nodes)/rviz/display.rviz"/>
+</launch>

@@ -1,0 +1,3 @@
+<launch>
+  <node name="pcl_publisher_node"  pkg="pcl_nodes" type="pub_pcl_node" args="$(find pcl_nodes)/data/data.csv" output="screen" />
+</launch>
